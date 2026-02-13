@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Letter To 'HER'</title>
+    <title>Let’s Give It A Chance</title>
 
     <style>
         body {
@@ -15,174 +15,24 @@
             align-items: center;
             background: #0b0b0b;
             font-family: 'Courier New', monospace;
-            overflow: hidden;
         }
 
-        .container {
+        .text {
+            color: #b30000;
+            font-size: clamp(22px, 5vw, 40px);
+            letter-spacing: 4px;
             text-align: center;
-        }
-
-        .title {
-            color: #b30000;
-            font-weight: 900;
-            font-size: clamp(26px, 5vw, 48px);
-            letter-spacing: 5px;
-            margin-bottom: 25px;
-            text-shadow: 0 0 15px rgba(179, 0, 0, 0.8);
-        }
-
-        .read-btn {
-            padding: 12px 28px;
-            font-size: 14px;
-            background: transparent;
-            color: #b30000;
-            border: 2px solid #b30000;
-            cursor: pointer;
-            transition: 0.4s ease;
-            letter-spacing: 2px;
-        }
-
-        .read-btn:hover {
-            background: #b30000;
-            color: #0b0b0b;
-            box-shadow: 0 0 15px rgba(179, 0, 0, 0.7);
-        }
-
-        /* Phone Overlay */
-        .phone-wrapper {
-            position: fixed;
-            inset: 0;
-            display: none;
-            justify-content: center;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.85);
-            padding: clamp(15px, 4vw, 40px);
-            box-sizing: border-box;
-        }
-
-        .phone {
-            width: min(95vw, 380px);
-            aspect-ratio: 9 / 19;
-            background: #111;
-            border-radius: 28px;
+            text-shadow: 0 0 20px rgba(179, 0, 0, 0.7);
             padding: 20px;
-            box-shadow: 0 0 40px rgba(179, 0, 0, 0.5);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .phone-header {
-            color: #b30000;
-            text-align: center;
-            font-weight: bold;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
-        }
-
-        /* FIXED LETTER CONTENT SPACING */
-        .letter-content {
-            flex: 1;
-            overflow-y: auto;
-            color: #7a0000;
-            font-size: 14px;
-            line-height: 1.9;
-
-            padding: 25px 18px 40px 18px;
-            /* Top | Right | Bottom | Left */
-            box-sizing: border-box;
-        }
-
-        .letter-content::-webkit-scrollbar {
-            width: 4px;
-        }
-
-        .letter-content::-webkit-scrollbar-thumb {
-            background: #b30000;
-            border-radius: 10px;
-        }
-
-        .close-btn {
-            margin-top: 10px;
-            padding: 8px;
-            font-size: 12px;
-            background: transparent;
-            color: #b30000;
-            border: 1px solid #b30000;
-            cursor: pointer;
-        }
-
-        .close-btn:hover {
-            background: #b30000;
-            color: #000;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="title">A Letter To Her</div>
-        <button class="read-btn" onclick="openLetter()">Click Here To Read</button>
+    <div class="text">
+        let's give it a chance...
     </div>
-
-    <div class="phone-wrapper" id="phoneBox">
-        <div class="phone">
-            <div class="phone-header">Private Message</div>
-
-            <div class="letter-content">
-                <!-- Your full letter remains here exactly as before -->
-                Hello dear, how’s it going? You must be fine, I think. I’m good too. As you said about my sleep and
-                going to bed early, I’ve been keeping that promise for the last few days. I go to bed before 2 AM now.
-                I’m trying to fix my sleep schedule because it’s necessary for health, you know. And I’m glad that you
-                cared about it. But that’s not the main thing I want to talk about. That was just a shift of activities
-                — it may change. Let’s talk about you first. Overall, what I’ve seen in these days while spending time
-                with you… you’re pretty. But what makes you even more beautiful to me is the artist in you. I love your
-                portraits — would you give me one someday? Your innocence when you talk is so pure… until you switch to
-                that naughty mind, hehe. And those little sparks when I do some “chapati talks.” And your laugh? Ahhhh…
-                I swear, it’s my favorite sound. Would you send me a voice note of you laughing uncontrollably? Pretty,
-                talented, innocent, and a little dangerously naughty? That’s an unfair combination you’ve got.
-                Impressive. Do you remember how we met? Suppose if I hadn’t clicked to join your team, or if you had
-                kicked me out, we wouldn’t have come this far — and you wouldn’t be reading this right now. When I asked
-                for your Instagram, you said yes, and we got connected. From that day, we spent time together in the
-                game whenever we got the chance. On Instagram, I confessed what I felt about you. Then somehow, after
-                being present for a day or two, we got disconnected — I don’t know how. Then suddenly, on 8th February,
-                we got a chance to spend time together again. I told you again that I like you, and you said you would
-                be with me. Our conversation shifted to family, interests, and it felt like we were planning to be
-                together. And then you asked for my number. I thought you were getting serious about this, so I gave it
-                to you. On 8th, 9th, and 10th February, we talked on calls for three straight days. I can say those were
-                the most consecutive days I’ve ever talked to any girl. That’s why your words felt wholehearted to me
-                when you told me to sleep early. After that, we chatted. When you called, I asked you to wait. When I
-                called back, I found myself blocked (12th Feb). Then I talked to you on Instagram. But I felt something
-                was missing. The way you promised me — “Mai reh lungi, tum jab tak kahoge mai reh lungi, zindagi ke anth
-                tak reh lungi. Par mujhe zara bhi laga ki tum badal gaye, mai chali jaungi.” That willingness of being
-                together feels missing now. I don’t know what you’re going through. But the way things were presented in
-                the last moment made me feel heavy inside. See, I’m old enough to understand things. I’ve seen many
-                incidents — not just in my life, but around me. So tell me what’s true. As I told you earlier, I won’t
-                take it in an improper way. I am a man who thinks, “The beauty of being liked by the one you like is
-                unmatched.” And right now, that matching feeling seems missing. To talk with you, I skipped playing
-                games. After you weren’t available to talk, I fixed my sleep. I changed some things in myself — with or
-                without you. But honestly, I want to do it with you. Let me tell you one thing: I am an overthinker. I
-                think too much. I take things in both ways. When you said you blocked my number, I tried to take it in
-                an affirmative way. But after the way you presented yourself, it led me into suspicion. So please tell
-                me the truth. I will accept it — even if it’s not acceptable to me. As you promised, you have to be
-                true. I am killing my time thinking about this. And now I am preparing for something great in my life. I
-                need assurance, I include you in it or not? <br><br>
-                Waiting for your call...
-            </div>
-
-            <button class="close-btn" onclick="closeLetter()">Close</button>
-        </div>
-    </div>
-
-    <script>
-        function openLetter() {
-            document.getElementById("phoneBox").style.display = "flex";
-        }
-
-        function closeLetter() {
-            document.getElementById("phoneBox").style.display = "none";
-        }
-    </script>
 
 </body>
 
